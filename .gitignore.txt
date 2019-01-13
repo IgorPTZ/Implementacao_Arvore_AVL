@@ -1,0 +1,9 @@
+.vs
+Debug
+ArvoreAVLProjetoExemplo.sln
+ArvoreAVLProjetoExemplo.vcxproj
+ArvoreAVLProjetoExemplo.vcxproj.filters
+ArvoreAVLProjetoExemplo.vcxproj.user
+stdafx.cpp
+stdafx.h
+targetver.h
