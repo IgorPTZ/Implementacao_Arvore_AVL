@@ -67,12 +67,10 @@ bool BinaryTree::balanced(NodeTree * root1) {
 		return true;
 	}
 	else {
-
 		if (root1->left == NULL && root1->right == NULL) {
 			return true;
 		}
 		else {
-
 			if (root1->left != NULL && root1->right != NULL) {
 				return (balanced(root1->left) == true && balanced(root1->right) == true);
 			}
@@ -229,15 +227,12 @@ void BinaryTree::makeEmpty() {
 
 void BinaryTree::destroy(NodeTree *&obj) {
 	if (!isEmpty(obj)) {
-
 		destroy(obj->left);
 
 		destroy(obj->right);
 
 		delete(obj);
-
 	}
-
 	obj = NULL;
 }
 
@@ -248,7 +243,6 @@ void BinaryTree::insertInOrder(NodeTree * node1, NodeTree *&root1) {
 		root1 = node1;
 	}
 	else {
-
 		if (node1->value > root1->value) {
 			insertInOrder(node1, root1->right);
 		}
@@ -258,7 +252,6 @@ void BinaryTree::insertInOrder(NodeTree * node1, NodeTree *&root1) {
 		else {
 			return;
 		}
-
 	}
 } // fim metodo insertInOrder
 
